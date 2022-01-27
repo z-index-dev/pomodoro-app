@@ -1,5 +1,4 @@
 // DOM Selectors
-
 // Timer
 let status = document.querySelector('.status');
 let timerDOM = document.querySelector('.timer');
@@ -238,12 +237,12 @@ todoForm.addEventListener('submit', e => {
 
 taskList.addEventListener('click', e => {
   // Check if the event is on the label
-  if (event.target.type === 'checkbox') {
-    toggleCompleted(event.target.parentElement.getAttribute('data-key'));
+  if (e.target.type === 'checkbox') {
+    toggleCompleted(e.target.parentElement.getAttribute('data-key'));
   }
 
-    if (event.target.classList.contains('delete-btn')) {
-      deleteTask(event.target.parentElement.getAttribute('data-key'));
+    if (e.target.classList.contains('delete-btn')) {
+      deleteTask(e.target.parentElement.getAttribute('data-key'));
     }
 });
 

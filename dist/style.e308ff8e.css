@@ -231,6 +231,7 @@ section.pomodoro .timer {
   background: linear-gradient(90deg, rgba(0,31,63,1) 0%, rgba(0,31,63,1) 10%, rgba(132,150,169,1) 10%, rgba(132,150,169,1) 30%, rgba(0,31,63,1) 30%);
   background-size: 100%;
   background-repeat: repeat;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
   font-size: 2rem;
